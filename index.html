@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsividade</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        document.querySelector(".menu-hamburger").onclick = () => {
+            if(document.querySelector('nav').classList.contains('.active')){
+               document.querySelector('nav').classList.remove('ativa');                                 
+            }else {
+                document.querySelector('nav').classList.add('ativa');
+            }
+        }
+    
+    </script>
+
+</head>
+<body>
+    <header>
+        <img src="/imagens/logo.png" alt="logo astrid arts">
+
+        <img class="menu-hamburger" src="imagens/hamburger.png" alt="menu-hamburger">
+
+        <nav class="active">
+            <a href="">Camisetas</a>
+            <a href="">Luminária</a>
+            <a href="">Quadros</a>
+            <a href="">Sobre</a>
+        </nav>
+    </header>
+</body>
+</html>
